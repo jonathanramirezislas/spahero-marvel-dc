@@ -9,7 +9,7 @@ import { SearchScreen } from '../components/search/SearchScreen';
 export const DashbopardRoutes = () => {
     return (
         <>
-            <Navbar/>
+            <Navbar />
             <div className="Container mt-2">
                 <Switch>
                     <Route exact path="/marvel" component={ marvel } />
