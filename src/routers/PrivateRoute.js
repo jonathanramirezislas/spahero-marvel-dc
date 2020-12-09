@@ -10,6 +10,7 @@ export const PrivateRoute = ({
     ...rest
 }) => {
     
+    //The pathname will save each time you change the path 
     localStorage.setItem('lastPath', rest.location.pathname);
 
     return (

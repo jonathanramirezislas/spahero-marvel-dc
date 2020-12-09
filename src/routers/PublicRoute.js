@@ -6,12 +6,13 @@ import { Route, Redirect } from 'react-router-dom';
 
 export const PublicRoute = ({
     isAuthenticated,
-    component: Component,
+    component: Component,//Rename because all components start with capita letter
     ...rest
 }) => {
 
     return (
         <Route { ...rest }
+        //props will contain the history, location,
             component={ (props) => (
                 ( !isAuthenticated )
                     ? ( <Component { ...props } /> )

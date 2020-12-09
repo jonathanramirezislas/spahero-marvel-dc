@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { AuthContext } from '../../auth/authContext';
+import { AuthContext } from '../../auth/AuthContext';
 import { types } from '../../types/types';
 
 export const LoginScreen = ({history}) => {
@@ -7,18 +7,17 @@ export const LoginScreen = ({history}) => {
     const {dispatch} = useContext(AuthContext)
 
     const handleLogin= ()=>{
-        console.log('click');
-        //history.push("/"); //don't use in login because you can go back to login screen
-        //history.replace("/");  
+        
+        const lastPath = localStorage.getItem('lastPath') || '/';
 
         dispatch({
-            type:types.login,
-            payload:{
-                name:'Jonathan'
+            type: types.login,
+            payload: {
+                name: 'Fernando'
             }
-        })
-        
-        history.replace("/"); 
+        });
+
+        history.replace( lastPath );
     }
 
     return (
