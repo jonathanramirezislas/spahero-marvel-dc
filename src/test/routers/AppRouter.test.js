@@ -32,7 +32,7 @@ describe('Pruebas en <AppRouter />', () => {
             dispatch: jest.fn(),
             user: {
                 logged: true,
-                name: 'Juan'
+                name: 'Jonas'
             }
         }
 

@@ -12,7 +12,8 @@ describe('Pruebas en <PrivateRoute />', () => {
     }
 
     /*Sobreescribimos la funcionalidad del setItem del localStorage
-    siendo esta vez una funcion jest
+    siendo esta vez una funcion jest (simulando la llamada)
+    NOTA. Si alguien de en produccion quita localStorage.setItem lo mostrara como error el test :)
     */
     Storage.prototype.setItem = jest.fn();
 
