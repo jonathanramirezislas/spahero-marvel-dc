@@ -1,7 +1,7 @@
 # Heroes
     
 
-![Heroes](https://res.cloudinary.com/djuqxjkh3/image/upload/v1611812947/Heroes/Heroes_hemlwm.gif)
+![Heroes](https://res.cloudinary.com/djuqxjkh3/image/upload/v1611813552/Heroes/Heroes_1_trlfmi.gif)
 
 Heroes is a app to find your favorite hero.
 
