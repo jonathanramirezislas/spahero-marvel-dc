@@ -1,14 +1,14 @@
 import React, { useContext } from 'react'
 import { Link, NavLink, useHistory } from 'react-router-dom'
-import { AuthContext } from '../../auth/AuthContext';
+import { AuthContext } from '../../auth/authContext';
 import { types } from '../../types/types';
 
 export const Navbar = () => {
 
     const {user:{name}, dispatch} = useContext(AuthContext);
     
-    //we use usehistory in Navbar 'cause is not a route so does not conatin history :(, 
-    const history =useHistory();//access to the history that is in the contest.provider because nabar is inside in this one
+    //we use useHistory in Navbar 'cause is not a route so does not contain history :(, 
+    const history =useHistory();//access to the history that is in the contest.provider because navbar is inside in this one
 
     const handlelogout =()=>{
 

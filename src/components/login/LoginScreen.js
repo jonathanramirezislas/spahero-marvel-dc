@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { AuthContext } from '../../auth/AuthContext';
+import { AuthContext } from '../../auth/authContext';
 import { types } from '../../types/types';
 
 export const LoginScreen = ({history}) => {
@@ -13,7 +13,7 @@ export const LoginScreen = ({history}) => {
         dispatch({
             type: types.login,
             payload: {
-                name: 'Fernando'
+                name: 'Jonathan'
             }
         });
 

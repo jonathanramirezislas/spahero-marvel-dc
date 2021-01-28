@@ -4,7 +4,7 @@ import {
     Switch
   } from 'react-router-dom';
 
-import { AuthContext } from '../auth/AuthContext';
+import { AuthContext } from '../auth/authContext';
 import { PrivateRoute } from './PrivateRoute';
 import { PublicRoute } from './PublicRoute';
 
